@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+.env
+
+# Environment & Credentials
+google_credentials.json
+
+# Logs & uploads
+logs/
+temp_uploads/
+
+# Docker
+*.log
+.dockerignore
+
+#previous_docs
+all_pictures/
+prev_data/
+temp/
+venv/
+key.txt
+v1.py
+v2.py
