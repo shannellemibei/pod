@@ -3,7 +3,7 @@ version: '3.8'
 services:
   fastapi-app:
     build: .
-    container_name: malachite
+    container_name: pod
     ports:
       - "9000:9000"
     env_file:
@@ -14,11 +14,3 @@ services:
       - ./google_credentials.json:/app/google_credentials.json:ro
     restart: unless-stopped
 
-nginx:
-    image: nginx:alpine
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - app
