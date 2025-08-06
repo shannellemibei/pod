@@ -24,7 +24,7 @@ def run_analysis(template_path: str, comparison_path: str, user_instructions: st
         "Analyze the structure and layout of the following template image. Mainly lets identify the logo of the company "
         "Generate a structured prompt that describes the expected format of any image that follows this template. "
         "Keep the prompt really short, we wanna know if the comparative  image is compliant or non compliant "
-        "All responses should be continuous paragrapghs, if compliant the paragraph should start with TRUE, if non-compliant it should start with FALSE"
+        "The prompt should specify that i strictly want one yes or no answer. If the image is compliant then give YES if not compliant say NO"
         "These are proof of delivery documents so basicaly in the image we will scan based on the template, there should be a document in the image from company specified on tempelate, we are trying to prefent delivery scams hence proof od delivery documents"
     )
     if user_instructions:
